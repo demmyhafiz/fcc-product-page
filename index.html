@@ -13,6 +13,19 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <style>
+  .hero-tag {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+    @media only screen and (max-width: 575px) {
+        .img-list2 {
+          flex-direction: column;
+        }
+    }
+  </style>
 </head>
 
 <body>
@@ -22,32 +35,81 @@
 
   <!-- Add your site or application content here -->
   <header id="header">
-    <div class="">
-      <img id="header-img" src="img/saber-alter-logo.jpg" alt="">
+    <div>
+      <img id="header-img" src="https://www.wallpaperup.com/uploads/wallpapers/2012/10/08/18518/2f76a665c9dbcde6d48b2d97c9f87aa6.jpg" alt="Saber Alter">
     </div>
     <nav id="nav-bar">
       <ul class="nav">
         <li>
-          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#header">Home</a>
         </li>
         <li>
-          <a class="nav-link" href="#home">Figure</a>
-          </li>
-        <li>
-          <a class="nav-link" href="#home">About</a>
+          <a class="nav-link" href="#figure">Figure</a>
         </li>
         <li>
-          <a class="nav-link" href="#home">Contact</a>
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
 
+  <main>
+    <div class="hero-tag">
+      <h1 class="text-tag">&ldquo;There are no regrets. If one can be proud of one's life,<br>one should not wish for another chance.&rdquo;</h1>
+    </div>
+
+    <div class="video-frame">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/AqfIJw4nCY4" allowfullscreen></iframe>
+
+      </div>
+
+    </div>
+
+    <div id="figure" class="img-list">
+      <div class="img-list2">
+        <img class="img-src" src="img/saber-alter-1.jpg" alt="">
+        <img class="img-src" src="img/saber-alter-5.jpg" alt="">
+      </div>
+      <div class="img-list2">
+        <img class="img-src" src="img/saber-alter-3.jpg" alt="">
+        <img class="img-src" src="img/saber-alter-4.jpg" alt="">
+      </div>
+    </div>
+
+    <div id="about" class="about-page">
+      <h2>A rerelease of the ruthless king who gave in to hatred and despair.</h2>
+      <p>A rerelease of the 1/7th scale King of Knights tainted by a black shadow - Saber Alter! She is posed slashing down with her holy sword Excalibur, in a dynamic pose filled with energy.
+        She comes with interchangeable parts that allow you to swap out Excalibur for Vortigern, a sword erupting with dark energy. Alternate parts that allow you to display her with her mask removed are also included. Enjoy the dark yet beautiful
+        charms of Saber Alter in your collection!</p>
+    </div>
+
+    <div id="contact" class="">
+      <h3>Want to know more about this amazing figure?</h3>
+      <form id="form" class="" action="https://www.freecodecamp.com/email-submit" method="post">
+        <label class="lbl" for="name">Name</label>
+        <input type="text" name="name" value="" placeholder="Enter your name">
+        <label class="lbl" for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" name="submit" value="Get in touch!" formaction="https://www.freecodecamp.com/email-submit">
+      </form>
+    </div>
+  </main>
+
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
